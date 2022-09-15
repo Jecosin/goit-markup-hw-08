@@ -1,0 +1,25 @@
+.sections {
+  @extend %sections;
+}
+.sections--pudding {
+@extend %sections--puddibg-top-none;
+
+}
+
+.section__title {
+
+    color: $primary-text-color;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.visally-hidden {
+    position: fixed;
+    transform: scale(0);
+}

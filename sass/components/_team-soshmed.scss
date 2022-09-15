@@ -1,0 +1,39 @@
+.team-sochmed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    @extend %list;
+}
+
+.team-sochmed__item {
+    display: flex;
+
+}
+
+.team-sochmed__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $icone-color;
+    fill: currentColor;
+
+    transition: background-color 250ms $timing-functione,
+        color 250ms $timing-functione;
+
+        &:hover,
+        &:focus {
+                color: $hero-tittle-color;
+                background-color: $accsent-color;
+            }
+}
+
+
+.team-sochmed__icones {
+    width: 20px;
+    height: 20px;
+}

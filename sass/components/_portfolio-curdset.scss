@@ -1,0 +1,97 @@
+.port-curdset {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px 0 0 -30px;
+
+    @extend %list;
+
+}
+
+.port-curdset__item {
+    position: relative;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.port-curdset__link {
+display: block;
+transition: box-shadow 250ms $timing-functione;
+
+   &:hover,
+   &:focus {
+        display: block;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);  
+    }
+}
+
+
+
+.port-curdset__link:hover .port-curdset__paragraph,
+.port-curdset__link:focus .port-curdset__paragraph {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.port-curdset__link--none {
+    text-decoration: none;
+}
+
+.port-curdset__conteiner {
+    position: relative;
+    overflow: hidden;
+}
+
+.port-curdset__paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 0 24px;
+    height: 100%;
+    width: 100%;
+
+    transform: translateY(101%);
+
+    transition: transform 250ms $timing-functione;
+
+}
+
+.port-curdset__discript {
+    margin: 0;
+    color: $hero-tittle-color;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.port-curdset__title {
+    margin-bottom: 4px;
+
+
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    @extend %list;
+}
+
+.port-curdset__text {
+    display: inline-block;
+
+
+    color: $secondory-text-color;
+
+    font-size: 16px;
+    line-height: 1.87;
+
+    @extend %list;
+}
+

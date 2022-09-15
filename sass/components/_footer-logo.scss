@@ -1,0 +1,21 @@
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+
+
+
+    color: $hero-tittle-color;
+
+    font-family: $logo-fonts;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    .footer__logo--accsent {
+            color: $accsent-color;
+        }
+
+}
+

@@ -1,0 +1,60 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: $footer-bacground-color;
+
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/bg-Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.hero__title {
+
+    color: $primary-background-color;
+
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero__button {
+    color: $hero-tittle-color;
+    background-color: $accsent-color;
+
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 216px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+
+    border-color: transparent;
+
+    transition: background-color 250ms $timing-functione;
+
+    &:hover,
+    &:focus {
+            background-color: $second-accent-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+}
+
