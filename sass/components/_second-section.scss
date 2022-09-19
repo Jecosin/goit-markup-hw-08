@@ -2,6 +2,16 @@
     display: flex;
 
     @extend %list;
+
+    @media (max-width:1200px) {
+        display: none;
+        }
+}
+
+.section__tittle--none {
+    @media (max-width:1200px) {
+            display: none;
+        }
 }
 
 .second-section__discript {

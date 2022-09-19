@@ -31,7 +31,17 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  width: 480px;
+}
+@media (min-width: 768px) {
+  .conteiner {
+    min-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .conteiner {
+    min-width: 1200px;
+  }
 }
 
 .conteiner-port-text {
@@ -83,6 +93,11 @@ img {
 .site-nav__items:last-child {
   margin-right: 0;
 }
+@media (max-width: 1200px) {
+  .site-nav__items {
+    display: none;
+  }
+}
 
 .site-nav__link {
   position: relative;
@@ -130,6 +145,11 @@ img {
 .auth-nav {
   display: flex;
   margin-left: auto;
+}
+@media (max-width: 1200px) {
+  .auth-nav {
+    display: none;
+  }
 }
 
 .auth-nav__link {
@@ -345,12 +365,6 @@ img {
 .comment__input:focus {
   border-color: #2196F3;
 }
-.comment__input ::-moz-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.comment__input :-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
 .comment__input ::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -369,9 +383,7 @@ img {
 }
 
 .agree-field__input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .agree-field__icone {
@@ -444,10 +456,12 @@ img {
   transform: scale(0);
 }
 
-.first-section {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 0 -30px;
+@media (min-width: 1200px) {
+  .first-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -30px;
+  }
 }
 
 .first-section .items {
@@ -487,6 +501,17 @@ img {
 .second-section {
   display: flex;
 }
+@media (max-width: 1200px) {
+  .second-section {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section__tittle--none {
+    display: none;
+  }
+}
 
 .second-section__discript {
   position: absolute;
@@ -517,10 +542,12 @@ img {
   background-color: #F5F4FA;
 }
 
-.card-section {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 0 -30px;
+@media (min-width: 1200px) {
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -30px;
+  }
 }
 
 .card-section__item {

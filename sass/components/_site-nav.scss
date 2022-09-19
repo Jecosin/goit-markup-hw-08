@@ -1,6 +1,7 @@
 .main-nav {
     display: flex;
     align-items: center;
+
 }
 
 
@@ -17,6 +18,10 @@
     &:last-child {
             margin-right: 0;
         }
+
+                  @media (max-width:1200px) {
+                      display: none;
+                  }
 }
 
 
