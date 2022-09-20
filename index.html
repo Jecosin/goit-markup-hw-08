@@ -27,11 +27,18 @@
           <a href="./index.html" class="head-sectione__logo"
             ><span class="head-sectione__logo--accsent">Web</span>Studio</a>
           <nav>
-            <button type="button" class="main-mav__button">
-              <scg width="40" height="40">
-                <use href="./imeges/svg/symbol-defs.svg#icon-menu_24px"></use>
-              </scg>
+            <button type="button" 
+            class="main-nav__button is-open"
+                  aria-expanded="false"
+                  aria-controls="mobile-menu"
+                  js-open-menu
+                  >
+              <svg width="40" height="40" aria-label="перемикач мобільного меню">
+                <use class="main-nav__icone--close" href="./imeges/svg/symbol-defs.svg#icon-close_24px"></use>
+                <use class="main-nav__icone--menu" href="./imeges/svg/symbol-defs.svg#icon-menu_24px"></use>
+              </svg>
             </button>
+            <div class="main-nav__menu">Контент меню</div>
             <ul class="site-nav">
               <li class="site-nav__items">
                 <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
@@ -462,7 +469,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="conteiner footer--conteiner">
-       <div class="class-conteiner">
+       <div class="contacts-conteiner">
          <a href="./index.html" class="footer__logo"
           ><span class="footer__logo--accsent">Web</span>Studio</a>
         <address>
@@ -544,6 +551,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
   </body>
 </html>

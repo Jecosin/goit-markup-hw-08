@@ -1,6 +1,6 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: $footer-bacground-color;
 
     text-align: center;
@@ -10,6 +10,11 @@
     background-size: cover;
     max-width: 1600px;
     margin: 0 auto;
+
+    @media (min-width:1200px) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
 }
 
 .hero__title {
@@ -20,12 +25,17 @@
     margin-bottom: 30px;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
 
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media (min-width:1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
 }
 
 .hero__button {

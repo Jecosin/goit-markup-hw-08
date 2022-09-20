@@ -18,6 +18,13 @@
     @extend %list;
 }
 
+.sochmed--conteiner {
+@media (max-width:767px) {
+     margin-bottom: 60px;
+ }
+}
+ 
+
 .footer-sochmed__item {
     display: flex;
 
@@ -65,7 +72,11 @@
 }
 
 .subskribe-form__label--flex {
-    display: flex;
+
+
+    @media (min-width:1200px) {
+            display: flex;
+        }
 }
 
 .subskribe-form__input {
