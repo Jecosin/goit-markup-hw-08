@@ -30,15 +30,15 @@
             <button type="button" 
             class="main-nav__button is-open"
                   aria-expanded="false"
-                  aria-controls="mobile-menu"
-                  js-open-menu
+                  aria-controls="main-nav__menu"
+                  data-menu-button
                   >
               <svg width="40" height="40" aria-label="перемикач мобільного меню">
                 <use class="main-nav__icone--close" href="./imeges/svg/symbol-defs.svg#icon-close_24px"></use>
                 <use class="main-nav__icone--menu" href="./imeges/svg/symbol-defs.svg#icon-menu_24px"></use>
               </svg>
             </button>
-            <div class="main-nav__menu">Контент меню</div>
+            <div class="main-nav__menu" id="main-nav__menu" data-menu>Контент меню</div>
             <ul class="site-nav">
               <li class="site-nav__items">
                 <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
@@ -217,11 +217,15 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="card-section">
             <li class="card-section__item">
-              <img
-                src="./imeges/igor-port.jpg"
-                alt="ігор портрет"
-                width="270"
-              />
+              <picture>
+                <source srcset="./imeges/igor-port-desktop.jpg 1x, ./imeges/igor-port-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./imeges/igor-port-desktop.webp 1x, ./imeges/igor-port-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./imeges/igor-port-tablet.jpg 1x, ./imeges/igor-port-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                <source srcset="./imeges/igor-port-tablet.webp 1x, ./imeges/igor-port-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./imeges/igor-port-mobile.jpg 1x, ./imeges/igor-port-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                <source srcset="./imeges/igor-port-mobile.webp 1x, ./imeges/igor-port-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                  <img src="./imeges/igor-port-mobile.jpg"alt="ігор портрет"/>
+              </picture>
               <div class="conteiner-team">
                 <h3 class="card-section__title">Ігор Дем'яненко</h3>
                 <p class="card-section__text" lang="en">Product Designer</p>
@@ -266,11 +270,15 @@
               </div>
             </li>
             <li class="card-section__item">
-              <img
-                src="./imeges/olga-port.jpg"
-                alt="ольга портрет"
-                width="270"
-              />
+                <picture>
+                <source srcset="./imeges/olga-port-desktop.jpg 1x, ./imeges/olga-port-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./imeges/olga-port-desktop.webp 1x, ./imeges/olga-port-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./imeges/olga-port-tablet.jpg 1x, ./imeges/olga-port-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                <source srcset="./imeges/olga-port-tablet.webp 1x, ./imeges/olga-port-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./imeges/olga-port-mobile.jpg 1x, ./imeges/olga-port-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                <source srcset="./imeges/olga-port-mobile.webp 1x, ./imeges/olga-port-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <img src="./imeges/olga-port-mobile.jpg"alt="ольга портрет"/>
+              </picture>
               <div class="conteiner-team">
                 <h3 class="card-section__title">Ольга Рєпіна</h3>
                 <p class="card-section__text" lang="en">Frontend Developer</p>
@@ -315,11 +323,15 @@
               </div>
             </li>
             <li class="card-section__item">
-              <img
-                src="./imeges/kolya-port.jpg"
-                alt="микола портрет"
-                width="270"
-              />
+              <picture>
+                <source srcset="./imeges/kolya-port-desktop.jpg 1x, ./imeges/kolya-port-desktop@2x.jpg 2x" media="(min-width:1200px)"/>
+                <source srcset="./imeges/kolya-port-desktop.wenp 1x, ./imeges/kolya-port-desktop@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                <source srcset="./imeges/kolya-port-tablet.jpg 1x, ./imeges/kolya-port-tablet@2x.jpg 2x" media="(min-width:768px)"/>
+                <source srcset="./imeges/kolya-port-tablet.webp 1x, ./imeges/kolya-port-tablet@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                <source srcset="./imeges/kolya-port-mobile.jpg 1x, ./imeges/kolya-port-mobile@2x.jpg 2x" media="(max-width:767px)"/>
+                <source srcset="./imeges/kolya-port-mobile.webp 1x, ./imeges/kolya-port-mobile@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                <img src="./imeges/kolya-port-mobile.jpg" alt="микола портрет"/>
+              </picture>
               <div class="conteiner-team">
                 <h3 class="card-section__title">Микола Тарасов</h3>
                 <p class="card-section__text" lang="en">Marketing</p>
@@ -364,11 +376,15 @@
               </div>
             </li>
             <li class="card-section__item">
-              <img
-                src="./imeges/michael-port.jpg"
-                alt="михайло портрет"
-                width="270"
-              />
+              <picture>
+                <source srcset="./imeges/michael-port-desktop.jpg 1x, ./imeges/michael-port-desktop@2x.jpg 2x" media="(min-width:1200px)"/>
+                <source srcset="./imeges/michael-port-desktop.webp 1x, ./imeges/michael-port-desktop@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                <source srcset="./imeges/michael-port-tablet.jpg 1x, ./imeges/michael-port-tablet@2x.jpg 2x" media="(min-width:768px)"/>
+                <source srcset="./imeges/michael-port-tablet.webp 1x, ./imeges/michael-port-tablet@2x.webp" media="(min-width:768px)" type="image/webp"/>
+                <source srcset="./imeges/michael-port-mobile.jpg 1x, ./imeges/michael-port-mobile@2x.jpg" media="(max-width:767px)"/>
+                <source srcset="./imeges/michael-port-mobile.webp 1x, ./imeges/michael-port-mobile@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                <img src="./imeges/michael-port-mobile.jpg" alt="михайло портрет"/>
+              </picture>
               <div class="conteiner-team">
                 <h3 class="card-section__title">Михайло Єрмаков</h3>
                 <p class="card-section__text" lang="en">UI Designer</p>

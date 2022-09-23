@@ -1,13 +1,21 @@
 .conteiner--main-port .port-btn {
-    display: flex;
-    justify-content: center;
+ 
     margin-bottom: 50px;
+
+    @media screen and (min-width:767px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .port-btn {
-    display: flex;
+    
 
     @extend %list;
+
+    @media screen and (min-width:767px) {
+        display: flex;
+}
 }
 
 .port-btn__items {

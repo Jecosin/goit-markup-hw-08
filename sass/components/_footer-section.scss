@@ -18,6 +18,9 @@
         }
 }
 .sochmed--conteiner {
-    margin-left: 70px;
+    
+    @media (min-width:1200px) {
+            margin-left: 70px;
+        }
     
 }

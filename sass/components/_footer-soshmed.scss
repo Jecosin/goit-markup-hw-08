@@ -10,15 +10,22 @@
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
 }
 
 .footer-sochmed {
     display: flex;
 
     @extend %list;
+
+    @media (min-width:480px) {
+      justify-content: center;
+    }
 }
 
 .sochmed--conteiner {
+text-align: center;
+
 @media (max-width:767px) {
      margin-bottom: 60px;
  }
