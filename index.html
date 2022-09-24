@@ -23,67 +23,116 @@
   <body>
     <!-- Header -->
     <header class="head-sectione">
-        <div class="conteiner main-nav">
-          <a href="./index.html" class="head-sectione__logo"
-            ><span class="head-sectione__logo--accsent">Web</span>Studio</a>
-          <nav>
-            <button type="button" 
+      <div class="conteiner main-nav">
+        <a href="./index.html" class="head-sectione__logo"
+          ><span class="head-sectione__logo--accsent">Web</span>Studio</a
+        >
+        <nav>
+          <button
+            type="button"
             class="main-nav__button is-open"
-                  aria-expanded="false"
-                  aria-controls="main-nav__menu"
-                  data-menu-button
-                  >
-              <svg width="40" height="40" aria-label="перемикач мобільного меню">
-                <use class="main-nav__icone--close" href="./imeges/svg/symbol-defs.svg#icon-close_24px"></use>
-                <use class="main-nav__icone--menu" href="./imeges/svg/symbol-defs.svg#icon-menu_24px"></use>
-              </svg>
-            </button>
-            <div class="main-nav__menu" id="main-nav__menu" data-menu>Контент меню</div>
-            <ul class="site-nav">
-              <li class="site-nav__items">
-                <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
-              </li>
-              <li class="site-nav__items">
-                <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
-              </li>
-              <li class="site-nav__items"><a href="#" class="site-nav__link">Контакти</a></li>
-            </ul>
-          </nav>
-          <ul class="auth-nav">
-            <li class="auth-nav__items">
-              <a class="auth-nav__link" href="mailto:info@devstudio.com"
-                ><svg class="auth-nav__icones" width="16" height="12">
-                  <use
-                    href="./imeges/svg/symbol-defs.svg#icon-envelope"
-                  ></use>
-                </svg>
-                info@devstudio.com</a
+            aria-expanded="false"
+            aria-controls="main-nav__menu"
+            data-menu-open
+          >
+            <svg width="40" height="40" aria-label="перемикач мобільного меню">
+              <use
+                class="main-nav__icone--menu"
+                href="./imeges/svg/symbol-defs.svg#icon-menu_24px"
+              ></use>
+            </svg>
+          </button>
+          <ul class="site-nav">
+            <li class="site-nav__items">
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link--current"
+                >Студія</a
               >
             </li>
-            <li class="auth-nav__items">
-              <a class="link auth-nav__link" href="tel:+380961111111"
-                ><svg class="auth-nav__icones" width="10" height="16">
-                  <use
-                    href="./imeges/svg/symbol-defs.svg#icon-smartphone"
-                  ></use>
-                </svg>
-                +38 096 111 11 11</a
+            <li class="site-nav__items">
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+            </li>
+            <li class="site-nav__items">
+              <a href="#" class="site-nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="auth-nav">
+          <li class="auth-nav__items">
+            <a class="auth-nav__link" href="mailto:info@devstudio.com"
+              ><svg class="auth-nav__icones" width="16" height="12">
+                <use href="./imeges/svg/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="auth-nav__items">
+            <a class="link auth-nav__link" href="tel:+380961111111"
+              ><svg class="auth-nav__icones" width="10" height="16">
+                <use href="./imeges/svg/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="main-nav__mobile-menu" id="main-nav__mobile-menu" data-menu>
+        <div class="conteiner mobile-menu__conteiner">
+          <button class="mobile-menu__close-button" data-menu-close>
+            <svg class="mobile-menu__close-icone">
+              <use href="./imeges/svg/symbol-defs.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+          <ul class="">
+            <li class="">
+              <a href="">Студія</a>
+            </li>
+            <li class="">
+              <a href="">Портфоліо</a>
+            </li>
+            <li class="">
+              <a href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="">
+            <li class="">
+              <a class="" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
               >
+            </li>
+            <li class="">
+              <a class="" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+          <ul class="">
+            <li class="">
+              <a class="" href="#">Instagram</a>
+            </li>
+            <li class="">
+              <a class="" href="#">Twitter</a>
+            </li>
+            <li class="">
+              <a class="" href="#">Facebook</a>
+            </li>
+            <li class="">
+              <a class="" href="#">LinkedIn</a>
             </li>
           </ul>
         </div>
+      </div>
     </header>
     <!-- Main Content -->
-    <main>
+    <!-- <main>
       <section class="hero">
         <div class="conteiner">
           <h1 class="hero__title">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
-          <!-- MODAL -->
-          <div class="backdrop is-hidden" data-modal>
+          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button> -->
+    <!-- MODAL -->
+    <!-- <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                   <form class="form">
              <p class="form__tittle">Залиште свої дані, ми вам передзвонимо</p>
@@ -198,15 +247,27 @@
           <h2 class="section__title section__tittle--none">Чим ми займаємося</h2>
           <ul class="second-section">
             <li class="second-section__items">
-              <img src="./imeges/kayboard.jpg" alt="клавіатура" width="370" />
+                  <picture>
+                <source srcset="./imeges/whatdowedo.webp 1x, ./imeges/whatdowedo@2x.webp" type="image/webp"/>
+                <source srcset="./imeges/whatdowedo.jpg 1x, ./imeges/whatdowedo@2x.jpg 2x"/>
+                <img src="./imeges/whatdowedo.jpg" alt="клавіатура"/>
+              </picture>
               <p class="second-section__discript">Десктопні додатки</p>
             </li>
             <li class="second-section__items">
-              <img src="./imeges/phone.jpg" alt="телефон" width="370" />
+               <picture>
+                <source srcset="./imeges/whatdowedo2.webp 1x, ./imeges/whatdowedo2@2x.webp" type="image/webp"/>
+                <source srcset="./imeges/whatdowedo2.jpg 1x, ./imeges/whatdowedo2@2x.jpg 2x"/>
+                <img src="./imeges/whatdowedo2.jpg" alt="телефон"/>
+              </picture>
               <p class="second-section__discript">Мобільні додатки</p>
             </li>
             <li class="second-section__items">
-              <img src="./imeges/ipad.jpg" alt="планшет" width="370" />
+              <picture>
+                <source srcset="./imeges/whatdowedo3.webp 1x, ./imeges/whatdowedo3@2x.webp" type="image/webp"/>
+                <source srcset="./imeges/whatdowedo3.jpg 1x, ./imeges/whatdowedo3@2x.jpg 2x"/>
+                <img src="./imeges/whatdowedo3.jpg" alt="планшет"/>
+              </picture>
               <p class="second-section__discript">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -481,9 +542,9 @@
           
           
         </div>
-    </main>
+    </main> -->
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="conteiner footer--conteiner">
        <div class="contacts-conteiner">
          <a href="./index.html" class="footer__logo"
@@ -569,5 +630,7 @@
     </footer>
     <script src="./js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
+  </body>
+</html> -->
   </body>
 </html>
