@@ -90,12 +90,6 @@ img {
 
 .site-nav {
   display: none;
-  display: flex;
-}
-@media (min-width: 768px) {
-  .site-nav {
-    margin-left: 93px;
-  }
 }
 
 .site-nav__items {
@@ -110,6 +104,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .main-nav {
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+  }
+}
 .auth-nav {
   display: none;
   display: flex;
@@ -1021,6 +1027,9 @@ img {
   height: 100%;
   z-index: 100;
   background-color: #FFFFFF;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .main-nav__mobile-menu.is-open {

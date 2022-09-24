@@ -21,10 +21,9 @@
     background-color: transparent;
     line-height: 0;
 
-    
+
 }
   
-
 //     @media screen and (max-width:767px) {
 //         display: none;
 //         position: absolute;
@@ -46,12 +45,6 @@
 
 .site-nav {
     display: none;
-    display: flex;
-
-    @media (min-width:768px) {
-            margin-left: 93px;
-        }
- 
 
     @extend %list
 }
@@ -68,6 +61,23 @@
                   }
 }
 
+@media screen and (min-width:768px) {
+    .main-nav {
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .site-nav {
+        display: flex;
+        margin-left: 93px;
+
+        
+  
+        
+}
+}
 
 
 // .site-nav__link {
