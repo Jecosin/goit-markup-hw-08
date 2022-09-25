@@ -10,7 +10,16 @@
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
 
+    @media screen and (min-width:768px) {
+        text-align: center;
+        
+    }
+         @media screen and (min-width:1200px) {
+             text-align:start;
+    
+         }
 }
 
 .footer-sochmed {
@@ -72,6 +81,10 @@ text-align: center;
     margin: 0;
     padding: 0;
     margin-left: auto;
+
+    @media screen and (min-width:768px) {
+        margin-left: 0;
+    }
 }
 
 .subscribe-form {
@@ -107,4 +120,10 @@ text-align: center;
             border-color: $accsent-color;
         }
 
+        @media screen and (min-width:768px) {
+            min-width: 450px;
+        }
+                 @media screen and (min-width:1200px) {
+                     min-width: 100%;
+                 }
 }
