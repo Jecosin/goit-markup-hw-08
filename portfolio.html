@@ -22,22 +22,30 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="head-sectione">
+       <header class="head-sectione">
       <div class="conteiner main-nav">
         <a href="./index.html" class="head-sectione__logo"
           ><span class="head-sectione__logo--accsent">Web</span>Studio</a
         >
         <nav>
+          <button type="button" class="main-nav__button js-open-menu">
+            <svg width="40" height="40" aria-label="перемикач мобільного меню">
+              <use
+                class="main-nav__icone--menu"
+                href="./imeges/svg/symbol-defs.svg#icon-menu_24px"
+              ></use>
+            </svg>
+          </button>
           <ul class="site-nav">
             <li class="site-nav__items">
-              <a href="./index.html" class="site-nav__link">Студія</a>
+              <a
+                href="./index.html"
+                class="site-nav__link"
+                >Студія</a
+              >
             </li>
             <li class="site-nav__items">
-              <a
-                href="./portfolio.html"
-                class="site-nav__link site-nav__link--current"
-                >Портфоліо</a
-              >
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
             </li>
             <li class="site-nav__items">
               <a href="#" class="site-nav__link">Контакти</a>
@@ -63,9 +71,57 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="main-nav__mobile-menu js-menu-container">
+        <div class="conteiner mobile-menu__conteiner">
+          <button class="mobile-menu__close-button js-close-menu">
+            <svg class="mobile-menu__close-icone">
+              <use href="./imeges/svg/symbol-defs.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+          <ul class="mobile-site-nav">
+            <li class="mobile-site-nav__items">
+              <a href="./index.html" class="mobile-site-nav__link">Студія</a>
+            </li>
+            <li class="mobile-site-nav__items">
+              <a href="./portfolio.html" class="mobile-site-nav__link mobile-site-nav__link--current">Портфоліо</a>
+            </li>
+            <li class="mobile-site-nav__items">
+              <a href="" class="mobile-site-nav__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-auth-nav">
+            <li class="mobile-auth-nav__item">
+              <a
+                class="mobile-auth-nav__link mobile-auth-nav__link--phone"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-auth-nav__items">
+              <a class="mobile-auth-nav__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-soshmed">
+            <li class="mobile-soshmed__item">
+              <a class="mobile-soshmed__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-soshmed__item">
+              <a class="mobile-soshmed__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-soshmed__item">
+              <a class="mobile-soshmed__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-soshmed__item">
+              <a class="mobile-soshmed__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <!-- Main Content -->
-    <!-- <main>
+    <main>
       <section class="sections">
         <div class="conteiner conteiner--main-port">
           <h1 class="section__title visally-hidden">Портфоліо</h1>
@@ -352,9 +408,9 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="conteiner footer--conteiner">
        <div class="class-conteiner">
          <a href="./index.html" class="footer__logo"
@@ -438,8 +494,7 @@
         </div>
       </div>
     </footer>
+     <script src="./js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
-  </body>
-</html> -->
   </body>
 </html>

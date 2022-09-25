@@ -56,6 +56,23 @@ img {
     min-width: 1200px;
   }
 }
+.conteiner-port-text {
+  display: block;
+  padding: 20px 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+}
+
+.conteiner-team {
+  display: block;
+  padding: 30px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .head-sectione {
   border-bottom: 1px solid #ECECEC;
   position: relative;
@@ -69,6 +86,12 @@ img {
   line-height: 1.16;
   text-decoration: none;
 }
+@media (min-width: 1200px) {
+  .head-sectione__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 .head-sectione__logo .head-sectione__logo--accsent {
   color: #2196F3;
 }
@@ -78,6 +101,14 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .main-nav {
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
 
 .main-nav__button {
   display: inline-flex;
@@ -86,6 +117,19 @@ img {
   border: none;
   background-color: transparent;
   line-height: 0;
+}
+@media screen and (min-width: 768px) {
+  .main-nav__button {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+  }
+  .main-nav__button.is-open {
+    display: block;
+  }
 }
 
 .site-nav {
@@ -98,7 +142,7 @@ img {
 .site-nav__items:last-child {
   margin-right: 0;
 }
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   .site-nav__items {
     display: none;
   }
@@ -116,14 +160,98 @@ img {
     margin-left: 93px;
   }
 }
+.site-nav__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav__link:hover, .site-nav__link:focus, .site-nav__link.current {
+  color: #2196F3;
+}
+
+.site-nav__link::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link--current {
+  color: #2196F3;
+}
+
+.site-nav__link--current::after {
+  opacity: 1;
+}
+
+.site-nav__link:hover::after {
+  opacity: 1;
+}
+
 .auth-nav {
   display: none;
-  display: flex;
   margin-left: auto;
+  padding-right: 15px;
 }
-@media (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .auth-nav {
-    display: none;
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: flex;
+  }
+}
+
+.auth-nav__link {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  fill: currentColor;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.auth-nav__link:hover, .auth-nav__link:focus {
+  color: #2196F3;
+}
+
+.auth-nav__icones {
+  margin-right: 10px;
+}
+.auth-nav__icones:hover {
+  fill: #2196F3;
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__icones {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__items + .auth-nav__items {
+    margin-left: 50px;
   }
 }
 
@@ -193,7 +321,7 @@ img {
   color: #ffffff;
   background-color: #2196F3;
   display: inline-block;
-  padding: 10px 32px;
+  padding: 10px 24px;
   min-width: 216px;
   font-family: inherit;
   font-weight: 700;
@@ -211,6 +339,11 @@ img {
   background-color: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .hero__button {
+    padding: 10px 32px;
+  }
 }
 
 .backdrop {
@@ -451,6 +584,13 @@ img {
   transform: scale(0);
 }
 
+@media screen and (min-width: 768px) {
+  .first-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -30px;
+  }
+}
 @media (min-width: 1200px) {
   .first-section {
     display: flex;
@@ -459,6 +599,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .first-section .items {
+    flex-basis: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
 @media (min-width: 1200px) {
   .first-section .items {
     flex-basis: calc(25% - 30px);
@@ -546,7 +692,14 @@ img {
   align-items: center;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .card-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .card-section {
     display: flex;
     flex-wrap: wrap;
@@ -561,7 +714,16 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .card-section__item {
+    width: 270px;
+    margin-left: 30px;
+  }
+}
+.card-section__item {
+  flex-basis: calc(50% - 30px);
+}
+@media screen and (min-width: 1200px) {
   .card-section__item {
     width: 270px;
     margin-left: 30px;
@@ -1030,6 +1192,7 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-nav__mobile-menu.is-open {
@@ -1052,21 +1215,40 @@ img {
   padding: 0;
   line-height: 0;
 }
+.mobile-menu__close-button:hover {
+  color: #2196F3;
+}
 
 .mobile-menu__close-icone {
   width: 40px;
   height: 40px;
 }
 
+.mobile-site-nav {
+  margin-top: 48px;
+  margin-bottom: 302px;
+}
+
+.mobile-site-nav__items {
+  margin-bottom: 32px;
+}
+
 .mobile-site-nav__link {
   display: block;
   color: #212121;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-site-nav__link:hover, .mobile-site-nav__link:focus, .mobile-site-nav__link.current {
+  color: #2196F3;
+}
+
+.mobile-site-nav__link--current {
+  color: #2196F3;
 }
 
 .mobile-auth-nav__link {

@@ -10,6 +10,8 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity 250ms $timing-functione,
+    visibility 250ms $timing-functione;
 }
 
 .main-nav__mobile-menu.is-open {
@@ -32,7 +34,12 @@
     padding: 0;
     line-height: 0;
 
+    &:hover {
+        color: $accsent-color;
+    }
+
 }
+
 
 .mobile-menu__close-icone {
     width: 40px;
@@ -40,11 +47,16 @@
 }
 
 .mobile-site-nav {
-@extend %list
+    margin-top: 48px;
+    margin-bottom: 302px;
+    
+    @extend %list;
+
 }
 
+
 .mobile-site-nav__items {
-  
+  margin-bottom: 32px;
 }
 
 .mobile-site-nav__link {
@@ -52,12 +64,24 @@
 
     color: $primary-text-color;
             font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
+            font-size: 40px;
+            line-height: 1.17;
             letter-spacing: 0.02em;
             text-decoration: none;
     
             transition: color 250ms $timing-functione;
+
+                &:hover,
+                &:focus,
+                &.current {
+                 color: $accsent-color;
+                }
+            
+                
+}
+
+.mobile-site-nav__link--current {
+    color: $accsent-color;
 }
 
 .mobile-auth-nav {
