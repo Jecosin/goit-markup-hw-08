@@ -3,9 +3,29 @@
 }
 
 .contacts-conteiner {
-    @media (max-width:767px) {
+   
+   
+        @media (max-width:767px) {
             margin-bottom: 60px;
         }
+
+        @media screen and (min-width:768px) {
+            text-align: center;
+            
+        }
+
+                  @media screen and (min-width:1200px) {
+                      text-align: start;
+        
+                  }
+
+                @media (max-width:1199px) {
+                    margin-right: 70px;
+                }
+                                 @media (max-width:767px) {
+                                     margin-right: 0;
+                                 }
+
 }
 
 .contacts__item {

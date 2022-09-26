@@ -59,7 +59,7 @@ transition: box-shadow 250ms $timing-functione;
 
 .port-curdset__paragraph {
     display: flex;
-    align-items: center;
+    
     justify-content: center;
     position: absolute;
     top: 0;
@@ -68,10 +68,15 @@ transition: box-shadow 250ms $timing-functione;
     padding: 0 24px;
     height: 100%;
     width: 100%;
+    overflow-y: scroll;
 
     transform: translateY(101%);
 
     transition: transform 250ms $timing-functione;
+
+    @media screen and (min-width:768px) {
+        align-items: center;
+    }
 
 }
 

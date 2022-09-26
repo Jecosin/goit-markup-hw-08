@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 16px;
     
     @media (max-width:767px) {
         justify-content: space-between;
             padding: 0;
-            margin-top: 16px;
             margin-bottom: 16px;
     }
    
@@ -35,6 +35,7 @@
                                 display: block;
                             }
 }
+      
 }
   
 //    
@@ -68,15 +69,19 @@
     .main-nav {
         justify-content: space-between;
         padding: 0;
-        margin-top: 16px;
         margin-bottom: 0px;
     }
 
     .site-nav {
         display: flex;
-        margin-left: 93px;
-        
+        margin-left: 93px;       
 }
+}
+@media screen and (min-width:1200px) {
+    .main-nav {
+        margin-top: 0;
+        
+    }
 }
 
 

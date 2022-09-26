@@ -29,7 +29,7 @@
         >
         <nav>
           <button type="button" class="main-nav__button js-open-menu">
-            <svg width="40" height="40" aria-label="перемикач мобільного меню">
+            <svg width="24" height="16" aria-label="перемикач мобільного меню">
               <use
                 class="main-nav__icone--menu"
                 href="./imeges/svg/symbol-defs.svg#icon-menu_24px"
@@ -54,7 +54,7 @@
         </nav>
         <ul class="auth-nav">
           <li class="auth-nav__items">
-            <a class="auth-nav__link" href="mailto:info@devstudio.com"
+            <a class="auth-nav__link auth-nav__link--tablet-email" href="mailto:info@devstudio.com"
               ><svg class="auth-nav__icones" width="16" height="12">
                 <use href="./imeges/svg/symbol-defs.svg#icon-envelope"></use>
               </svg>
@@ -62,7 +62,7 @@
             >
           </li>
           <li class="auth-nav__items">
-            <a class="link auth-nav__link" href="tel:+380961111111"
+            <a class="link auth-nav__link auth-nav__link--tablet-phone" href="tel:+380961111111"
               ><svg class="auth-nav__icones" width="10" height="16">
                 <use href="./imeges/svg/symbol-defs.svg#icon-smartphone"></use>
               </svg>
@@ -73,7 +73,8 @@
       </div>
       <div class="main-nav__mobile-menu js-menu-container">
         <div class="conteiner mobile-menu__conteiner">
-          <button class="mobile-menu__close-button js-close-menu">
+          <div class="mobile-site-nav__conteiner">
+            <button class="mobile-menu__close-button js-close-menu">
             <svg class="mobile-menu__close-icone">
               <use href="./imeges/svg/symbol-defs.svg#icon-close_24px"></use>
             </svg>
@@ -89,7 +90,9 @@
               <a href="" class="mobile-site-nav__link">Контакти</a>
             </li>
           </ul>
-          <ul class="mobile-auth-nav">
+          </div>
+          <div class="mobile-auth-nav__conteiner">
+            <ul class="mobile-auth-nav">
             <li class="mobile-auth-nav__item">
               <a
                 class="mobile-auth-nav__link mobile-auth-nav__link--phone"
@@ -117,6 +120,7 @@
               <a class="mobile-soshmed__link" href="#">LinkedIn</a>
             </li>
           </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -572,7 +576,7 @@
         </address>
        </div>
         <div class="sochmed--conteiner">
-           <h2 class="footer__title">ПРИЄДНУЙТЕСЬ</h2>
+           <p class="footer__title">ПРИЄДНУЙТЕСЬ</p>
           <ul class="footer-sochmed">
                   <li class="footer-sochmed__item">
                     <a href="" class="footer-sochmed__links">

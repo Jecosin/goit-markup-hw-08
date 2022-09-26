@@ -25,7 +25,7 @@
     text-decoration: none;
     fill: currentColor;
 
-    // padding-top: 21px;
+    
     padding-bottom: 10px;
 
     display: flex;
@@ -35,7 +35,30 @@
 
     &:hover,
     &:focus {color: $accsent-color;}
+
+    @media screen and (min-width:1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        
+        
+    }
 }
+
+.auth-nav__link--tablet-phone {
+   @media screen and (max-width:1199px) {
+    padding-bottom: 20px;
+
+   }
+}
+
+.auth-nav__link--tablet-email {
+  @media screen and (max-width:1199px) {
+    padding-top: 20px;
+
+}
+}
+
+
 
 .auth-nav__icones {
     margin-right: 10px;
