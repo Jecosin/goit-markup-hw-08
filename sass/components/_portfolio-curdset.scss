@@ -28,7 +28,9 @@
 }
 
 .port-curdset__link {
-display: block;
+display: flex;
+flex-direction: column;
+height: 100%;
 transition: box-shadow 250ms $timing-functione;
 
    &:hover,
@@ -69,6 +71,7 @@ transition: box-shadow 250ms $timing-functione;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
+    align-items: center;
 
     transform: translateY(101%);
 
