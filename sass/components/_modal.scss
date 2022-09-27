@@ -215,6 +215,7 @@
 
     border: 2px solid $icone-border-color;
     border-radius: 4px;
+    flex-shrink: 0;
 
     transition: background-color 250ms $timing-functione,
         border-color 250ms $timing-functione;

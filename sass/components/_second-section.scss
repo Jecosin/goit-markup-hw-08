@@ -3,9 +3,12 @@
 
     @extend %list;
 
-    @media (max-width:1200px) {
+    
+}
+.sections.sections--pudding {
+@media (max-width:1199px) {
         display: none;
-        }
+    }
 }
 
 .section__tittle--none {

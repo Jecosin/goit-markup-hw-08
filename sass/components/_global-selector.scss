@@ -7,6 +7,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+.boby--no-scroll {
+     overflow: hidden
+ }
+
 img {
     display: block;
     max-width: 100%;

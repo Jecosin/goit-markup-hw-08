@@ -8,8 +8,11 @@
         justify-content: space-between;
             padding: 0;
             margin-bottom: 16px;
+            
     }
-   
+        @media (min-width:768px) {
+            margin-top: 0;
+        }
    
 
 }
