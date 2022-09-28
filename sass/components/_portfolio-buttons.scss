@@ -1,10 +1,17 @@
 .conteiner--main-port .port-btn {
- 
-    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 15px 8px;
 
     @media screen and (min-width:767px) {
         display: flex;
         justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+        
     }
 }
 
@@ -19,11 +26,11 @@
 }
 
 .port-btn__items {
-    display: inline-block;
+   
    
 
     &+& {
-    margin-left: 8px;
+    
     
 }
 

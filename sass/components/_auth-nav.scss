@@ -26,7 +26,8 @@
     fill: currentColor;
 
     
-    padding-bottom: 10px;
+    // padding-bottom: 10px; 
+
 
     display: flex;
     align-items: center;
@@ -35,6 +36,8 @@
 
     &:hover,
     &:focus {color: $accsent-color;}
+
+        
 
     @media screen and (min-width:1200px) {
         padding-top: 32px;
@@ -52,6 +55,17 @@
 }
 
 .auth-nav__link--tablet-email {
+    @media screen and (min-width:768px) {
+            margin-bottom: 10px;
+    
+        }
+
+                 @media screen and (min-width:1200px) {
+                     margin-bottom: 0;
+        
+                 }
+
+
   @media screen and (max-width:1199px) {
     padding-top: 20px;
 
