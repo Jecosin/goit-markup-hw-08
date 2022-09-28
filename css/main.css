@@ -1332,6 +1332,7 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -1404,6 +1405,10 @@ img {
 .mobile-soshmed {
   display: flex;
   flex-wrap: wrap;
+}
+
+.mobile-soshmed__item:first-child {
+  padding-left: 0%;
 }
 
 .mobile-soshmed__link {
