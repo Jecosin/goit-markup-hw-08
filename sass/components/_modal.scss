@@ -194,11 +194,16 @@
 .agree-field__label {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
 
     margin-left: 8.38px;
     margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        
+    }
 }
 
 .agree-field__input {
